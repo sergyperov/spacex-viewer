@@ -1,0 +1,30 @@
+@import "colors";
+@import "variables";
+
+.rocketsGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	a {
+		text-decoration: none;
+		color: $color-brand-darken;
+	}
+}
+
+.statusMsg {
+	display: block;
+	margin-top: 30px;
+	font-size: 30px;
+}
+
+@media (min-width: $small-display-width) {
+	.rocketsGrid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: $medium-display-width) {
+	.rocketsGrid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}

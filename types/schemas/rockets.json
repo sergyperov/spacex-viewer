@@ -1,0 +1,283 @@
+{
+	"title": "RocketsAPISchema",
+	"type": "object",
+	"properties": {
+		"name": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string"
+		},
+		"active": {
+			"type": "boolean"
+		},
+		"stages": {
+			"type": "number"
+		},
+		"boosters": {
+			"type": "number"
+		},
+		"cost_per_launch": {
+			"type": "number"
+		},
+		"success_rate_pct": {
+			"type": "number"
+		},
+		"first_flight": {
+			"type": "string"
+		},
+		"country": {
+			"type": "string"
+		},
+		"company": {
+			"type": "string"
+		},
+		"height": {
+			"type": "object",
+			"properties": {
+				"meters": {
+					"type": "number"
+				},
+				"feet": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"diameter": {
+			"type": "object",
+			"properties": {
+				"meters": {
+					"type": "number"
+				},
+				"feet": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"mass": {
+			"type": "object",
+			"properties": {
+				"kg": {
+					"type": "number"
+				},
+				"lb": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"payload_weights": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		},
+		"first_stage": {
+			"type": "object",
+			"properties": {
+				"reusable": {
+					"type": "boolean"
+				},
+				"engines": {
+					"type": "number"
+				},
+				"fuel_amount_tons": {
+					"type": "number"
+				},
+				"burn_time_sec": {
+					"type": "number"
+				},
+				"thrust_sea_level": {
+					"type": "object",
+					"properties": {
+						"kN": {
+							"type": "number"
+						},
+						"lbf": {
+							"type": "number"
+						}
+					},
+					"additionalProperties": false
+				},
+				"thrust_vacuum": {
+					"type": "object",
+					"properties": {
+						"kN": {
+							"type": "number"
+						},
+						"lbf": {
+							"type": "number"
+						}
+					},
+					"additionalProperties": false
+				}
+			},
+			"additionalProperties": false
+		},
+		"second_stage": {
+			"type": "object",
+			"properties": {
+				"reusable": {
+					"type": "boolean"
+				},
+				"engines": {
+					"type": "number"
+				},
+				"fuel_amount_tons": {
+					"type": "number"
+				},
+				"burn_time_sec": {
+					"type": "number"
+				},
+				"thrust": {
+					"type": "object",
+					"properties": {
+						"kN": {
+							"type": "number"
+						},
+						"lbf": {
+							"type": "number"
+						}
+					},
+					"additionalProperties": false
+				},
+				"payloads": {
+					"type": "object",
+					"properties": {
+						"option_1": {
+							"type": "string"
+						},
+						"composite_fairing": {
+							"type": "object",
+							"properties": {
+								"height": {
+									"type": "object",
+									"properties": {
+										"meters": {
+											"type": "number"
+										},
+										"feet": {
+											"type": "number"
+										}
+									},
+									"additionalProperties": false
+								},
+								"diameter": {
+									"type": "object",
+									"properties": {
+										"meters": {
+											"type": "number"
+										},
+										"feet": {
+											"type": "number"
+										}
+									},
+									"additionalProperties": false
+								}
+							},
+							"additionalProperties": false
+						}
+					},
+					"additionalProperties": false
+				}
+			},
+			"additionalProperties": false
+		},
+		"engines": {
+			"type": "object",
+			"properties": {
+				"number": {
+					"type": "number"
+				},
+				"type": {
+					"type": "string"
+				},
+				"version": {
+					"type": "string"
+				},
+				"layout": {
+					"type": "string"
+				},
+				"isp": {
+					"type": "object",
+					"properties": {
+						"sea_level": {
+							"type": "number"
+						},
+						"vacuum": {
+							"type": "number"
+						}
+					},
+					"additionalProperties": false
+				},
+				"engine_loss_max": {
+					"type": "number"
+				},
+				"propellant_1": {
+					"type": "string"
+				},
+				"propellant_2": {
+					"type": "string"
+				},
+				"thrust_sea_level": {
+					"type": "object",
+					"properties": {
+						"kN": {
+							"type": "number"
+						},
+						"lbf": {
+							"type": "number"
+						}
+					},
+					"additionalProperties": false
+				},
+				"thrust_vacuum": {
+					"type": "object",
+					"properties": {
+						"kN": {
+							"type": "number"
+						},
+						"lbf": {
+							"type": "number"
+						}
+					},
+					"additionalProperties": false
+				},
+				"thrust_to_weight": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"landing_legs": {
+			"type": "object",
+			"properties": {
+				"number": {
+					"type": "number"
+				},
+				"material": {
+					"type": "object"
+				}
+			},
+			"additionalProperties": false
+		},
+		"flickr_images": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"wikipedia": {
+			"type": "string"
+		},
+		"description": {
+			"type": "string"
+		},
+		"id": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

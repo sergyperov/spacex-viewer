@@ -1,0 +1,25 @@
+.rocketCard {
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+
+	.heading {
+		display: flex;
+		align-items: center;
+		margin: 10px 0;
+
+		.title {
+			flex: 1;
+			text-decoration: none;
+		}
+	}
+
+	.firstFlight {
+		margin-top: auto;
+		padding: 5px 0;
+	}
+
+	.thumbnailWrapper {
+		height: 15vh;
+	}
+}

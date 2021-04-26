@@ -1,0 +1,22 @@
+@import "colors";
+@import 'variables';
+
+.successRateBadge {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 7px;
+	color: $color-brand-darken;
+
+	&.perfectRate {
+		background-color: $color-positive;
+	}
+
+	&.normalRate {
+		background-color: $color-caution;
+	}
+
+	&.awfulRate {
+		color: $color-brand-lighten;
+		background-color: $color-negative;
+	}
+}

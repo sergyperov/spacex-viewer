@@ -1,0 +1,48 @@
+.rocketInfo {
+	text-align: left;
+	max-width: 1000px;
+	margin: 0 auto;
+
+	.title {
+		margin-right: 20px;
+	}
+
+	.costPerLaunch {
+		display: block;
+	}
+
+	.firstFlight {
+		display: block;
+	}
+
+	.thumbnailsCollection {
+		display: flex;
+		flex-wrap: wrap;
+
+		.thumbnailWrapper {
+			height: 15vh;
+			max-width: 300px;
+			padding: 5px;
+			flex: 1 auto;
+
+			img {
+				object-fit: cover;
+				vertical-align: bottom;
+			}
+		}
+	}
+
+	.linksWrapper {
+		text-align: center;
+	}
+}
+
+.rocketInfoContainer {
+	text-align: center;
+
+	.statusMsg {
+		display: block;
+		margin-top: 30px;
+		font-size: 30px;
+	}
+}
